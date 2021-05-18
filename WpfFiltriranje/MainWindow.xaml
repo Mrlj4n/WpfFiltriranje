@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfFiltriranje.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFiltriranje"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" Height="376.514" Width="355.64">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,21,0,0" TextWrapping="Wrap" Text="Unesi deo imena: " VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxPretraga" HorizontalAlignment="Left" Height="23" Margin="114,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211" TextChanged="TextBoxPretraga_TextChanged"/>
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="197" Margin="10,58,0,0" VerticalAlignment="Top" Width="315"
+                  AlternationCount="2"
+                  AlternatingRowBackground="LightBlue"
+                  AutoGenerateColumns="True"
+                  CanUserAddRows="False"
+                  CanUserSortColumns="False"
+                  />
+
+    </Grid>
+</Window>
